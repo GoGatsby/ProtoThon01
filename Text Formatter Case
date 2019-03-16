@@ -26,5 +26,6 @@ elif(c=='4'):
          print(i[0].upper(),end='')
          print(i[1:],end=' ')
          k=k+1
+        else:
         print(i,end=' ')   
         
