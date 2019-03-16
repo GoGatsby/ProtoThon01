@@ -1,0 +1,30 @@
+import pygame
+from pygame import *
+pygame.init()
+l=input("Enter the sentence: ").strip().split()
+g=[]
+font = pygame.font.Font(None, 40) 
+font2=pygame.font.Font(None,26)
+c=input("Enter the Choice\n1.All Caps\n2.Small Caps\n3.Title case\n4.Start Case")
+if(c=='1'):
+    for i in l:
+        print(i.upper(),end=' ')
+elif(c=='2'):
+    for i in l:
+        g.append(i.upper())
+    for i in g:
+        print(font.render(i[0],True,(0,0,0)),end=' ')
+        print(font2.render(i[1:],True,(0,0,0)),end=' ')
+elif(c=='3'):
+    for i in l:
+        print(i[0].upper(),end='')
+        print(i[1:],end=' ')
+elif(c=='4'):
+    k=0
+    for i in l:
+        if k==0:
+         print(i[0].upper(),end='')
+         print(i[1:],end=' ')
+         k=k+1
+        print(i,end=' ')   
+        
